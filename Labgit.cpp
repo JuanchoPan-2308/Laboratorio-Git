@@ -1,6 +1,9 @@
 #include<iostream>
 
 using namespace std;
+
 int main(){
-	cout<<"jajajaja"<<endl;
+
+	cout<<"Insterte su edad: ";
+	int x, cin>>x;
 }
