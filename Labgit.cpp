@@ -1,18 +1,20 @@
 #include<iostream>
+#include<fstream>
+#include<sstream>
 
 using namespace std;
 
 int main(){
 
-	cout<<"Insterte su edad: ";
-	int edad = 0;
-	cin>>edad;
+	ifstream entrada("Input/ArchivoEntrada.txt.txt");
 
-	if (edad == 14){
+	if (entrada.is_open()){
+		cout<<"Archivo abierto"<<endl;
+		string line;
+		cout<<endl;
 
-		for (int i=0; i<1;i--){
-
-			cout<<"TIENES 14 ACTIVA CAM"<<endl;
+		while(getline(entrada,line)){
+			cout<<line<<endl;
 		}
 	}
 }
